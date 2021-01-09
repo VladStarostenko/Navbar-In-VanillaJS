@@ -1,0 +1,87 @@
+<!DOCUMENT html>
+<html long="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Section Navigation Component</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <span class="logo">Visual Language</span>
+    <div class="components">
+      <ul class="visible-components">
+        <li>
+          <div class="dropdown">
+            <button onclick="openDropdown(0)" class="dropbtn">Components</button>
+            <div id="myDropdown0" class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="openDropdown(1)" class="dropbtn">Components 1</button>
+            <div id="myDropdown1" class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="openDropdown(2)" class="dropbtn">Components 2</button>
+            <div id="myDropdown2" class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="openDropdown(3)" class="dropbtn">Components 3</button>
+            <div id="myDropdown3" class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="openDropdown(4)" class="dropbtn">Components 4</button>
+            <div id="myDropdown4" class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="openDropdown(5)" class="dropbtn">Components 5</button>
+            <div id="myDropdown5" class="dropdown-content">
+              <a href="#">Action</a>
+              <a href="#">Another action</a>
+              <a href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="show-more-container">
+        <div class="show-more-button">Show More</div>
+        </span>
+        <ul class="hidden-components">
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+<script src="calculateWidth.js"></script>
+<script src="dropdown.js"></script>
+</html>

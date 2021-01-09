@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+.navbar {
+  font-weight: bold;
+  color: #696969;
+  border-bottom: 1px solid #696969;
+  width: 100%;
+  line-height: 80px;
+  font-size: 16px;
+  padding: 0 30px;
+  position: relative;
+}
+.navbar a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #696969;
+}
+.navbar div {
+  float: right;
+}
+.visible-components, .hidden-components {
+  list-style: none;
+  float: left;
+}
+.visible-components li {
+  display: inline-block;
+  border-left: 0.5px solid  #696969;
+  border-right: 0.5px solid  #696969;
+  float: left;
+}
+
+.hidden-components li {
+  border-left: 0.5px solid  #696969;
+  border-right: 0.5px solid  #696969;
+  border-top: 0.5px solid  #696969;
+  border-bottom: 0.5px solid  #696969;
+}
+
+.visible-components li a:hover {
+  color: #4682B4;
+  border-bottom-style: solid;
+  border-bottom-color: #4682B4;
+  border-bottom-width: 3px;
+  font-weight: bold;
+}
+.show-more-container:hover {
+  color: #4682B4;
+  font-weight: bold;
+}
+.navbar .navbar-toggler {
+  display: none;
+}
+
+.show-more-container {
+  padding: 0 20px;
+  display: block;
+  float: right;
+}
+
+.hidden-components {
+  width: 100%;
+  padding: 0;
+  transition: all ease-in-out 0.3s;
+  display: none;
+}
+
+.hidden-componen.show {
+  display: block;
+}
+
+.show-more-button {
+  width: 100%;
+  text-align:center;
+}
+
+@media (max-width: 450px) {
+  .hidden-components{
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: auto;
+  }
+
+  .hidden-components li {
+    padding: 0 40px;
+  }
+}
+
+.dropbtn {
+  width: 100%;
+  line-height: 80px;
+  background-color: #FFFFFF;
+  padding: 0 22px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: #696969;
+  font-weight: bold;
+  border-left: 0.5px solid  #696969;
+  border-right: 0.5px solid  #696969;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  color: #4682B4;
+  border-bottom-style: solid;
+  border-bottom-color: #4682B4;
+  border-bottom-width: 3px;
+  font-weight: bold;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  line-height: 1.2em;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.hidden-components .dropdown {
+  border-top: 0.5px solid  #696969;
+  border-bottom: 0.5px solid  #696969;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
